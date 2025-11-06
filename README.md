@@ -1,105 +1,38 @@
-# 🇹🇷 TOKİ Uygunluk Testi
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-**TOKİ Uygunluk Testi**, vatandaşların **Toplu Konut İdaresi Başkanlığı (TOKİ)** tarafından yürütülen  
-**500 Bin Sosyal Konut Projesi**ne başvuru yapmaya **uygun olup olmadıklarını** kolayca öğrenmelerini sağlar.
+Website URL: https://bilaltosungit.github.io/toki-basvuru-uygunluk-testi
 
-Kullanıcılar birkaç soruya cevap verir, sistem ise **mevzuata göre** sonucu gösterir:
+## Getting Started
 
-> ✅ “Tebrikler, TOKİ başvuru şartlarını sağlıyorsunuz.”  
-> ❌ “Maalesef bu başvuru döneminde TOKİ’ye başvuru yapamıyorsunuz.”
-
----
-
-## 🏠 Proje Amacı
-
-Bu proje, resmi TOKİ başvuru süreci **öncesinde** vatandaşlara bir **ön kontrol** imkânı sunar.  
-Amaç, gereksiz başvuruları önleyip başvuru sürecini kolaylaştırmaktır.  
-Site tamamen **bilgilendirme amaçlıdır**, **resmî başvuru almaz.**
-
----
-
-## ⚙️ Özellikler
-
-- 🇹🇷 **Tamamen Türkçe** kullanıcı arayüzü
-- 💬 **Çoktan seçmeli** adım adım uygunluk testi
-- 🧩 **Mevzuata %100 uyumlu** kontrol sistemi
-- 📱 **Mobil uyumlu (responsive)** tasarım
-- 🎨 **Material UI** tabanlı modern arayüz
-- 🔁 Test sonunda “Yeniden Dene” seçeneği
-- 💾 İsteğe bağlı LocalStorage desteği
-
----
-
-## 🧠 Testte Sorulan Başlıca Kriterler
-
-1. En az 10 yıldır T.C. vatandaşı olmak
-2. 18 yaşını doldurmuş olmak
-3. Proje ilinde son 1 yıldır ikamet etmek (bazı kategorilerde 3 yıl)
-4. Üzerine, eşine veya çocuklarına ait konut bulunmamak
-5. Daha önce TOKİ’den konut/arsa almamış olmak
-6. Hane halkı net gelirinin sınırlar içinde olması
-7. Eşin de aynı şartları sağlaması
-8. Kategoriye göre özel koşulları taşımak (Genç, Engelli, Emekli vb.)
-9. AFAD veya Kentsel Dönüşüm hak sahipliği bulunmamak
-
----
-
-## 🛠️ Kullanılan Teknolojiler
-
-| Teknoloji                       | Açıklama                               |
-| ------------------------------- | -------------------------------------- |
-| **Next.js**                     | React tabanlı framework (frontend)     |
-| **React + TypeScript**          | Bileşen tabanlı yapı                   |
-| **Material UI (MUI)**           | Kullanıcı arayüzü bileşenleri          |
-| **Framer Motion** _(opsiyonel)_ | Animasyonlar                           |
-| **Vercel** _(önerilen)_         | Canlı yayınlama için önerilen platform |
-
----
-
-## 🚀 Kurulum ve Çalıştırma
-
-### 1️⃣ Depoyu klonla
+First, run the development server:
 
 ```bash
-git clone https://github.com/<kullanici-adin>/toki-uygunluk-testi.git
-cd toki-uygunluk-testi
-
-
-2️⃣ Bağımlılıkları yükle
-npm install
-
-3️⃣ Projeyi çalıştır
 npm run dev
-
-4️⃣ Tarayıcıda aç
-
-👉 http://localhost:3000
- adresine git.
-
- 🧩 Geliştirici Notları
-
-Bu proje Cursor yardımıyla geliştirilmiştir.
-
-Resmî TOKİ başvuru sistemiyle bağlantılı değildir.
-
-Bilgilendirme amaçlıdır, kullanıcı verisi kaydedilmez.
-
-🌐 Canlı Demo
-
-🟢 toki-uygunluk-testi.vercel.app
- (örnek bağlantı)
-(Kendi deploy bağlantını buraya ekleyebilirsin.)
-
-👨‍💻 Geliştirici
-
-Bilal Tosun
-Frontend Developer
-📍 Ankara, Türkiye
-🔗 LinkedIn
- • GitHub
-
- 📜 Lisans
-
-Bu proje MIT Lisansı ile lisanslanmıştır.
-Serbestçe kullanabilir, geliştirebilir veya uyarlayabilirsiniz.
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
