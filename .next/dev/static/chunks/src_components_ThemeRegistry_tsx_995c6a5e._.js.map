@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/bilaltosun/Desktop/toki-basvuru-uygunluk-testi/src/components/ThemeRegistry.tsx"],"sourcesContent":["'use client';\n\nimport { ThemeProvider, createTheme } from \"@mui/material/styles\";\nimport CssBaseline from \"@mui/material/CssBaseline\";\n\nconst theme = createTheme({\n  palette: {\n    primary: {\n      main: \"#005fa3\",\n    },\n  },\n  typography: {\n    fontFamily: [\n      \"Inter\",\n      \"Roboto\",\n      \"-apple-system\",\n      \"BlinkMacSystemFont\",\n      '\"Segoe UI\"',\n      \"Arial\",\n      \"sans-serif\",\n    ].join(\",\"),\n  },\n});\n\nexport default function ThemeRegistry({\n  children,\n}: {\n  children: React.ReactNode;\n}) {\n  return (\n    <ThemeProvider theme={theme}>\n      <CssBaseline />\n      {children}\n    </ThemeProvider>\n  );\n}\n\n"],"names":[],"mappings":";;;;;AAEA;AAAA;AACA;AAHA;;;;AAKA,MAAM,QAAQ,IAAA,6NAAW,EAAC;IACxB,SAAS;QACP,SAAS;YACP,MAAM;QACR;IACF;IACA,YAAY;QACV,YAAY;YACV;YACA;YACA;YACA;YACA;YACA;YACA;SACD,CAAC,IAAI,CAAC;IACT;AACF;AAEe,SAAS,cAAc,EACpC,QAAQ,EAGT;IACC,qBACE,6LAAC,mOAAa;QAAC,OAAO;;0BACpB,6LAAC,oLAAW;;;;;YACX;;;;;;;AAGP;KAXwB","debugId":null}}]
-}
