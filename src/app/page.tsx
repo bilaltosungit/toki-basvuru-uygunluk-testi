@@ -197,6 +197,40 @@ export default function Home() {
               Teste Başla 🏠
             </Button>
           </motion.div>
+
+          <Box
+            sx={{
+              mt: { xs: 4, sm: 5 },
+              pt: { xs: 2, sm: 3 },
+              borderTop: "1px solid rgba(0, 0, 0, 0.05)",
+            }}
+          >
+            <Typography
+              variant="caption"
+              sx={{
+                color: "#999",
+                fontSize: { xs: "0.7rem", sm: "0.75rem" },
+                display: "block",
+                mb: 0.5,
+              }}
+            >
+              Geliştirici: <strong>Bilal Tosun</strong>
+            </Typography>
+            <Typography
+              variant="caption"
+              sx={{
+                color: "#999",
+                fontSize: { xs: "0.7rem", sm: "0.75rem" },
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: 0.5,
+              }}
+            >
+              <span>🚀</span>
+              <span>Cursor AI ile geliştirilmiştir</span>
+            </Typography>
+          </Box>
         </Box>
       </motion.div>
     </Box>

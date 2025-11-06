@@ -19,9 +19,11 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "TOKİ Uygunluk Testi – Başvuru Şartlarını Öğrenin",
   description:
-    "500 Bin Sosyal Konut Projesi için TOKİ başvuru şartlarını sağlayıp sağlamadığınızı öğrenin.",
+    "500 Bin Sosyal Konut Projesi için TOKİ başvuru şartlarını sağlayıp sağlamadığınızı öğrenin. Bilal Tosun tarafından Cursor AI ile geliştirilmiştir.",
   manifest: "/manifest.json",
   themeColor: "#005fa3",
+  authors: [{ name: "Bilal Tosun" }],
+  creator: "Bilal Tosun",
 };
 
 export default function RootLayout({

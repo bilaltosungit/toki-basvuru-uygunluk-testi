@@ -330,6 +330,42 @@ export default function ResultScreen({
               </Link>
             </Box>
           </Box>
+
+          <Divider sx={{ my: { xs: 2, sm: 3 }, width: "100%", maxWidth: 500 }} />
+
+          <Box
+            sx={{
+              width: "100%",
+              textAlign: "center",
+              mt: { xs: 1, sm: 2 },
+            }}
+          >
+            <Typography
+              variant="caption"
+              sx={{
+                color: "#999",
+                fontSize: { xs: "0.7rem", sm: "0.75rem" },
+                display: "block",
+                mb: 0.5,
+              }}
+            >
+              Geliştirici: <strong>Bilal Tosun</strong>
+            </Typography>
+            <Typography
+              variant="caption"
+              sx={{
+                color: "#999",
+                fontSize: { xs: "0.7rem", sm: "0.75rem" },
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: 0.5,
+              }}
+            >
+              <span>🚀</span>
+              <span>Cursor AI ile geliştirilmiştir</span>
+            </Typography>
+          </Box>
         </CardContent>
       </Card>
     </motion.div>

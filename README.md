@@ -1,6 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🇹🇷 TOKİ Uygunluk Testi
 
-Website URL: https://bilaltosungit.github.io/toki-basvuru-uygunluk-testi
+**TOKİ Uygunluk Testi**, vatandaşların **Toplu Konut İdaresi Başkanlığı (TOKİ)** tarafından yürütülen  
+**500 Bin Sosyal Konut Projesi**ne başvuru yapmaya **uygun olup olmadıklarını** kolayca öğrenmelerini sağlar.
+
+🌐 **Canlı Site:** https://bilaltosungit.github.io/toki-basvuru-uygunluk-testi
+
+---
+
+## 👨‍💻 Geliştirici
+
+**Bilal Tosun**  
+Frontend Developer | Ankara, Türkiye
+
+Bu proje [Cursor](https://cursor.sh) AI asistanı ile geliştirilmiştir. 🚀
+
+---
+
+## 🛠️ Kullanılan Teknolojiler
+
+- **Next.js 16** - React framework
+- **TypeScript** - Type safety
+- **Material UI (MUI)** - UI components
+- **Framer Motion** - Animations
+- **Tailwind CSS** - Styling
+
+---
 
 ## Getting Started
 
