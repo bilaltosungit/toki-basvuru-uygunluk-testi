@@ -1,0 +1,24 @@
+{
+  "name": "TOKİ Uygunluk Testi",
+  "short_name": "TOKİ Test",
+  "description": "500 Bin Sosyal Konut Projesi için TOKİ başvuru şartlarını kontrol edin",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#005fa3",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml"
+    }
+  ]
+}
+

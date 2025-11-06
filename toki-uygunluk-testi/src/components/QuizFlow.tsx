@@ -85,7 +85,7 @@ const CATEGORY_SPECIFIC_QUESTIONS: Record<
   { question: string; options: string[] }
 > = {
   "Genç (18–30 yaş arası)": {
-    question: "10/11/1995 tarihinden sonra doğmuş musunuz?",
+    question: "Doğum tarihiniz 10/11/1995 tarihinden sonra mı?",
     options: ["Evet", "Hayır"],
   },
   "3 ve Daha Fazla Çocuklu Aile": {
@@ -296,7 +296,39 @@ export default function QuizFlow() {
 
   return (
     <Box sx={{ width: "100%", maxWidth: 900, mx: "auto", px: 2 }}>
-      <Stepper activeStep={currentStep} sx={{ mb: 4, mt: 2 }}>
+      <Stepper
+        activeStep={currentStep}
+        sx={{
+          mb: 4,
+          mt: 2,
+          "& .MuiStepLabel-root .Mui-completed": {
+            color: "#005fa3",
+          },
+          "& .MuiStepLabel-label.Mui-completed.MuiStepLabel-alternativeLabel": {
+            color: "#005fa3",
+          },
+          "& .MuiStepLabel-root .Mui-active": {
+            color: "#ff9800",
+          },
+          "& .MuiStepLabel-label.Mui-active.MuiStepLabel-alternativeLabel": {
+            color: "#ff9800",
+            fontWeight: 600,
+          },
+          "& .MuiStep-root": {
+            "& .MuiStepLabel-root": {
+              "& .MuiStepIcon-root": {
+                fontSize: "1.8rem",
+                "&.Mui-completed": {
+                  color: "#005fa3",
+                },
+                "&.Mui-active": {
+                  color: "#ff9800",
+                },
+              },
+            },
+          },
+        }}
+      >
         {Array.from({ length: totalSteps }).map((_, index) => (
           <Step key={index}>
             <StepLabel />
@@ -317,13 +349,21 @@ export default function QuizFlow() {
       </AnimatePresence>
 
       <Box
-        sx={{ display: "flex", justifyContent: "space-between", mt: 4, mb: 4 }}
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          mt: 4,
+          mb: 4,
+          minHeight: 56,
+          alignItems: "center",
+        }}
       >
         <Button
           onClick={handleBack}
           disabled={currentStep === 0}
           sx={{
             color: "#005fa3",
+            minWidth: 120,
             "&:disabled": {
               color: "#ccc",
             },
@@ -336,13 +376,17 @@ export default function QuizFlow() {
             variant="contained"
             onClick={handleNext}
             sx={{
-              backgroundColor: "#005fa3",
+              background: "linear-gradient(135deg, #005fa3 0%, #ff9800 100%)",
+              boxShadow: "0 4px 15px rgba(0, 95, 163, 0.3)",
+              fontWeight: 600,
+              minWidth: 120,
               "&:hover": {
-                backgroundColor: "#004a82",
+                background: "linear-gradient(135deg, #004a82 0%, #ff6f00 100%)",
+                boxShadow: "0 6px 20px rgba(0, 95, 163, 0.4)",
               },
             }}
           >
-            {currentStep === totalSteps - 1 ? "Sonuçları Gör" : "Sonraki"}
+            {currentStep === totalSteps - 1 ? "Sonuçları Gör 🏠" : "Sonraki"}
           </Button>
         )}
       </Box>

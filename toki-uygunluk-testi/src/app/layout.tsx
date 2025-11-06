@@ -20,6 +20,8 @@ export const metadata: Metadata = {
   title: "TOKİ Uygunluk Testi – Başvuru Şartlarını Öğrenin",
   description:
     "500 Bin Sosyal Konut Projesi için TOKİ başvuru şartlarını sağlayıp sağlamadığınızı öğrenin.",
+  manifest: "/manifest.json",
+  themeColor: "#005fa3",
 };
 
 export default function RootLayout({
