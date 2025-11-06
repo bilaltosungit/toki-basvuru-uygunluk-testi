@@ -39,12 +39,22 @@ function QuestionCard({ question, options, selectedAnswer, onAnswerSelect, quest
         },
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Card$2f$Card$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Card$3e$__["Card"], {
             sx: {
-                borderRadius: 3,
+                borderRadius: {
+                    xs: 2,
+                    sm: 3
+                },
                 boxShadow: "0 10px 40px rgba(0, 95, 163, 0.15), 0 0 0 1px rgba(255, 152, 0, 0.1)",
                 maxWidth: 800,
                 width: "100%",
                 mx: "auto",
-                minHeight: 500,
+                minHeight: {
+                    xs: "auto",
+                    sm: 500
+                },
+                maxHeight: {
+                    xs: "calc(100vh - 200px)",
+                    sm: "none"
+                },
                 display: "flex",
                 flexDirection: "column",
                 background: "linear-gradient(135deg, #ffffff 0%, #f8fbff 100%)",
@@ -74,11 +84,16 @@ function QuestionCard({ question, options, selectedAnswer, onAnswerSelect, quest
             },
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$CardContent$2f$CardContent$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CardContent$3e$__["CardContent"], {
                 sx: {
-                    p: 4,
+                    p: {
+                        xs: 2,
+                        sm: 3,
+                        md: 4
+                    },
                     display: "flex",
                     flexDirection: "column",
                     flex: 1,
-                    minHeight: 0
+                    minHeight: 0,
+                    overflow: "auto"
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -98,17 +113,30 @@ function QuestionCard({ question, options, selectedAnswer, onAnswerSelect, quest
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/QuestionCard.tsx",
-                        lineNumber: 79,
+                        lineNumber: 81,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                         sx: {
-                            minHeight: 60,
-                            maxHeight: 120,
-                            mb: 4,
+                            minHeight: {
+                                xs: "auto",
+                                sm: 120
+                            },
+                            maxHeight: {
+                                xs: "none",
+                                sm: 120
+                            },
+                            mb: {
+                                xs: 2,
+                                sm: 3,
+                                md: 4
+                            },
                             display: "flex",
                             alignItems: "flex-start",
-                            overflow: "auto",
+                            overflow: {
+                                xs: "visible",
+                                sm: "auto"
+                            },
                             "&::-webkit-scrollbar": {
                                 width: "6px"
                             },
@@ -131,27 +159,47 @@ function QuestionCard({ question, options, selectedAnswer, onAnswerSelect, quest
                                 fontWeight: 600,
                                 color: "#333",
                                 lineHeight: 1.5,
-                                wordBreak: "break-word"
+                                wordBreak: "break-word",
+                                fontSize: {
+                                    xs: "1.25rem",
+                                    sm: "1.5rem",
+                                    md: "1.75rem"
+                                }
                             },
                             children: question
                         }, void 0, false, {
                             fileName: "[project]/src/components/QuestionCard.tsx",
-                            lineNumber: 117,
+                            lineNumber: 119,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/QuestionCard.tsx",
-                        lineNumber: 93,
+                        lineNumber: 95,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                         sx: {
                             display: "flex",
                             flexDirection: "column",
-                            gap: 2,
+                            gap: {
+                                xs: 1.5,
+                                sm: 2
+                            },
                             flex: 1,
                             minHeight: 0,
-                            pt: 2,
+                            pt: {
+                                xs: 1,
+                                sm: 2
+                            },
+                            overflowY: {
+                                xs: "visible",
+                                sm: "auto"
+                            },
+                            maxHeight: {
+                                xs: "none",
+                                sm: "calc(100vh - 400px)",
+                                md: "none"
+                            },
                             "&::-webkit-scrollbar": {
                                 width: "6px"
                             },
@@ -172,12 +220,24 @@ function QuestionCard({ question, options, selectedAnswer, onAnswerSelect, quest
                                 onClick: ()=>onAnswerSelect(option),
                                 fullWidth: true,
                                 sx: {
-                                    minHeight: 56,
-                                    maxHeight: 56,
-                                    py: 1.5,
-                                    px: 3,
+                                    minHeight: {
+                                        xs: "auto",
+                                        sm: 56
+                                    },
+                                    py: {
+                                        xs: 1.25,
+                                        sm: 1.5
+                                    },
+                                    px: {
+                                        xs: 2,
+                                        sm: 3
+                                    },
                                     textTransform: "none",
-                                    fontSize: "1rem",
+                                    fontSize: {
+                                        xs: "0.875rem",
+                                        sm: "0.9375rem",
+                                        md: "1rem"
+                                    },
                                     borderRadius: 2,
                                     background: selectedAnswer === option ? "linear-gradient(135deg, #005fa3 0%, #004a82 100%)" : "transparent",
                                     backgroundColor: selectedAnswer === option ? "#005fa3" : "transparent",
@@ -202,18 +262,18 @@ function QuestionCard({ question, options, selectedAnswer, onAnswerSelect, quest
                                 children: option
                             }, index, false, {
                                 fileName: "[project]/src/components/QuestionCard.tsx",
-                                lineNumber: 157,
+                                lineNumber: 162,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/QuestionCard.tsx",
-                        lineNumber: 132,
+                        lineNumber: 135,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/QuestionCard.tsx",
-                lineNumber: 70,
+                lineNumber: 71,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
@@ -273,12 +333,22 @@ function ResultScreen({ isEligible, onRestart }) {
         },
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Card$2f$Card$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Card$3e$__["Card"], {
             sx: {
-                borderRadius: 3,
+                borderRadius: {
+                    xs: 2,
+                    sm: 3
+                },
                 boxShadow: isEligible ? "0 20px 60px rgba(76, 175, 80, 0.25), 0 0 0 1px rgba(76, 175, 80, 0.1)" : "0 20px 60px rgba(244, 67, 54, 0.15), 0 0 0 1px rgba(244, 67, 54, 0.1)",
                 maxWidth: 800,
                 width: "100%",
                 mx: "auto",
-                minHeight: 400,
+                minHeight: {
+                    xs: "auto",
+                    sm: 400
+                },
+                maxHeight: {
+                    xs: "calc(100vh - 100px)",
+                    sm: "none"
+                },
                 display: "flex",
                 flexDirection: "column",
                 background: isEligible ? "linear-gradient(135deg, #ffffff 0%, #f1f8f4 100%)" : "linear-gradient(135deg, #ffffff 0%, #fff5f5 100%)",
@@ -308,14 +378,19 @@ function ResultScreen({ isEligible, onRestart }) {
             },
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$CardContent$2f$CardContent$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CardContent$3e$__["CardContent"], {
                 sx: {
-                    p: 6,
+                    p: {
+                        xs: 3,
+                        sm: 4,
+                        md: 6
+                    },
                     textAlign: "center",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
                     justifyContent: "center",
                     flex: 1,
-                    minHeight: 0
+                    minHeight: 0,
+                    overflow: "auto"
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -323,47 +398,81 @@ function ResultScreen({ isEligible, onRestart }) {
                             display: "flex",
                             flexDirection: "column",
                             alignItems: "center",
-                            minHeight: 200,
-                            justifyContent: "center"
+                            minHeight: {
+                                xs: "auto",
+                                sm: 200
+                            },
+                            justifyContent: "center",
+                            mb: {
+                                xs: 2,
+                                sm: 0
+                            }
                         },
                         children: isEligible ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$CheckCircle$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                     sx: {
-                                        fontSize: 80,
+                                        fontSize: {
+                                            xs: 60,
+                                            sm: 70,
+                                            md: 80
+                                        },
                                         color: "#4caf50",
-                                        mb: 3
+                                        mb: {
+                                            xs: 2,
+                                            sm: 3
+                                        }
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ResultScreen.tsx",
-                                    lineNumber: 105,
+                                    lineNumber: 108,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                     variant: "h4",
                                     component: "h2",
                                     sx: {
-                                        mb: 2,
+                                        mb: {
+                                            xs: 1,
+                                            sm: 2
+                                        },
                                         fontWeight: 600,
-                                        color: "#333"
+                                        color: "#333",
+                                        fontSize: {
+                                            xs: "1.5rem",
+                                            sm: "2rem",
+                                            md: "2.125rem"
+                                        }
                                     },
                                     children: "Tebrikler!"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ResultScreen.tsx",
-                                    lineNumber: 112,
+                                    lineNumber: 115,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                     variant: "h6",
                                     sx: {
-                                        mb: 4,
+                                        mb: {
+                                            xs: 2,
+                                            sm: 3,
+                                            md: 4
+                                        },
                                         color: "#666",
-                                        lineHeight: 1.6
+                                        lineHeight: 1.6,
+                                        fontSize: {
+                                            xs: "1rem",
+                                            sm: "1.25rem"
+                                        },
+                                        px: {
+                                            xs: 2,
+                                            sm: 0
+                                        }
                                     },
                                     children: "TOKİ başvuru şartlarını sağlıyorsunuz."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ResultScreen.tsx",
-                                    lineNumber: 119,
+                                    lineNumber: 127,
                                     columnNumber: 17
                                 }, this)
                             ]
@@ -371,57 +480,96 @@ function ResultScreen({ isEligible, onRestart }) {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Cancel$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                     sx: {
-                                        fontSize: 80,
+                                        fontSize: {
+                                            xs: 60,
+                                            sm: 70,
+                                            md: 80
+                                        },
                                         color: "#f44336",
-                                        mb: 3
+                                        mb: {
+                                            xs: 2,
+                                            sm: 3
+                                        }
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ResultScreen.tsx",
-                                    lineNumber: 128,
+                                    lineNumber: 142,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                     variant: "h4",
                                     component: "h2",
                                     sx: {
-                                        mb: 2,
+                                        mb: {
+                                            xs: 1,
+                                            sm: 2
+                                        },
                                         fontWeight: 600,
-                                        color: "#333"
+                                        color: "#333",
+                                        fontSize: {
+                                            xs: "1.5rem",
+                                            sm: "2rem",
+                                            md: "2.125rem"
+                                        }
                                     },
                                     children: "Maalesef"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ResultScreen.tsx",
-                                    lineNumber: 135,
+                                    lineNumber: 149,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                     variant: "h6",
                                     sx: {
-                                        mb: 4,
+                                        mb: {
+                                            xs: 2,
+                                            sm: 3,
+                                            md: 4
+                                        },
                                         color: "#666",
-                                        lineHeight: 1.6
+                                        lineHeight: 1.6,
+                                        fontSize: {
+                                            xs: "1rem",
+                                            sm: "1.25rem"
+                                        },
+                                        px: {
+                                            xs: 2,
+                                            sm: 0
+                                        }
                                     },
                                     children: "Bu başvuru döneminde TOKİ'ye başvuru yapamıyorsunuz."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ResultScreen.tsx",
-                                    lineNumber: 142,
+                                    lineNumber: 161,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true)
                     }, void 0, false, {
                         fileName: "[project]/src/components/ResultScreen.tsx",
-                        lineNumber: 94,
+                        lineNumber: 96,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
                         variant: "contained",
                         onClick: onRestart,
                         sx: {
-                            m1: 2,
-                            py: 1.5,
-                            px: 2,
-                            fontSize: "1rem",
+                            m: {
+                                xs: 1,
+                                sm: 2
+                            },
+                            py: {
+                                xs: 1.25,
+                                sm: 1.5
+                            },
+                            px: {
+                                xs: 2,
+                                sm: 3
+                            },
+                            fontSize: {
+                                xs: "0.875rem",
+                                sm: "1rem"
+                            },
                             backgroundColor: "#005fa3",
                             "&:hover": {
                                 backgroundColor: "#004a82"
@@ -430,18 +578,22 @@ function ResultScreen({ isEligible, onRestart }) {
                         children: "Yeniden Dene"
                     }, void 0, false, {
                         fileName: "[project]/src/components/ResultScreen.tsx",
-                        lineNumber: 152,
+                        lineNumber: 177,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Divider$2f$Divider$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Divider$3e$__["Divider"], {
                         sx: {
-                            my: 4,
+                            my: {
+                                xs: 2,
+                                sm: 3,
+                                md: 4
+                            },
                             width: "100%",
                             maxWidth: 500
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/components/ResultScreen.tsx",
-                        lineNumber: 169,
+                        lineNumber: 194,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -453,22 +605,31 @@ function ResultScreen({ isEligible, onRestart }) {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                 variant: "subtitle2",
                                 sx: {
-                                    mb: 3,
+                                    mb: {
+                                        xs: 2,
+                                        sm: 3
+                                    },
                                     color: "#55883B",
                                     fontWeight: 600,
-                                    fontSize: "0.95rem"
+                                    fontSize: {
+                                        xs: "0.875rem",
+                                        sm: "0.95rem"
+                                    }
                                 },
                                 children: "Yararlı Bağlantılar"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ResultScreen.tsx",
-                                lineNumber: 177,
+                                lineNumber: 202,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                                 sx: {
                                     display: "flex",
                                     flexDirection: "column",
-                                    gap: 2,
+                                    gap: {
+                                        xs: 1.5,
+                                        sm: 2
+                                    },
                                     mb: 1
                                 },
                                 children: [
@@ -479,10 +640,16 @@ function ResultScreen({ isEligible, onRestart }) {
                                         sx: {
                                             display: "flex",
                                             alignItems: "center",
-                                            gap: 1.5,
+                                            gap: {
+                                                xs: 1,
+                                                sm: 1.5
+                                            },
                                             color: "#005fa3",
                                             textDecoration: "none",
-                                            p: 1.5,
+                                            p: {
+                                                xs: 1.25,
+                                                sm: 1.5
+                                            },
                                             borderRadius: 2,
                                             border: "1px solid rgba(0, 95, 163, 0.2)",
                                             backgroundColor: "rgba(0, 95, 163, 0.05)",
@@ -497,12 +664,16 @@ function ResultScreen({ isEligible, onRestart }) {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Description$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                 sx: {
-                                                    fontSize: 20,
-                                                    color: "#005fa3"
+                                                    fontSize: {
+                                                        xs: 18,
+                                                        sm: 20
+                                                    },
+                                                    color: "#005fa3",
+                                                    flexShrink: 0
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ResultScreen.tsx",
-                                                lineNumber: 219,
+                                                lineNumber: 244,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -510,18 +681,22 @@ function ResultScreen({ isEligible, onRestart }) {
                                                 sx: {
                                                     flex: 1,
                                                     textAlign: "left",
-                                                    fontWeight: 500
+                                                    fontWeight: 500,
+                                                    fontSize: {
+                                                        xs: "0.8125rem",
+                                                        sm: "0.875rem"
+                                                    }
                                                 },
                                                 children: "Detaylı Başvuru Bilgilendirme Formu"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ResultScreen.tsx",
-                                                lineNumber: 220,
+                                                lineNumber: 245,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ResultScreen.tsx",
-                                        lineNumber: 196,
+                                        lineNumber: 221,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Link$2f$Link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Link$3e$__["Link"], {
@@ -531,10 +706,16 @@ function ResultScreen({ isEligible, onRestart }) {
                                         sx: {
                                             display: "flex",
                                             alignItems: "center",
-                                            gap: 1.5,
+                                            gap: {
+                                                xs: 1,
+                                                sm: 1.5
+                                            },
                                             color: "#005fa3",
                                             textDecoration: "none",
-                                            p: 1.5,
+                                            p: {
+                                                xs: 1.25,
+                                                sm: 1.5
+                                            },
                                             borderRadius: 2,
                                             border: "1px solid rgba(0, 95, 163, 0.2)",
                                             backgroundColor: "rgba(0, 95, 163, 0.05)",
@@ -549,12 +730,16 @@ function ResultScreen({ isEligible, onRestart }) {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Language$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                 sx: {
-                                                    fontSize: 20,
-                                                    color: "#005fa3"
+                                                    fontSize: {
+                                                        xs: 18,
+                                                        sm: 20
+                                                    },
+                                                    color: "#005fa3",
+                                                    flexShrink: 0
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ResultScreen.tsx",
-                                                lineNumber: 255,
+                                                lineNumber: 281,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -562,18 +747,22 @@ function ResultScreen({ isEligible, onRestart }) {
                                                 sx: {
                                                     flex: 1,
                                                     textAlign: "left",
-                                                    fontWeight: 500
+                                                    fontWeight: 500,
+                                                    fontSize: {
+                                                        xs: "0.8125rem",
+                                                        sm: "0.875rem"
+                                                    }
                                                 },
                                                 children: "TOKİ 500 Bin Konut Projesi Resmi Site"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ResultScreen.tsx",
-                                                lineNumber: 256,
+                                                lineNumber: 282,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ResultScreen.tsx",
-                                        lineNumber: 232,
+                                        lineNumber: 258,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Link$2f$Link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Link$3e$__["Link"], {
@@ -583,10 +772,16 @@ function ResultScreen({ isEligible, onRestart }) {
                                         sx: {
                                             display: "flex",
                                             alignItems: "center",
-                                            gap: 1.5,
+                                            gap: {
+                                                xs: 1,
+                                                sm: 1.5
+                                            },
                                             color: "#005fa3",
                                             textDecoration: "none",
-                                            p: 1.5,
+                                            p: {
+                                                xs: 1.25,
+                                                sm: 1.5
+                                            },
                                             borderRadius: 2,
                                             border: "1px solid rgba(0, 95, 163, 0.2)",
                                             backgroundColor: "rgba(0, 95, 163, 0.05)",
@@ -601,12 +796,16 @@ function ResultScreen({ isEligible, onRestart }) {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$VerifiedUser$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                 sx: {
-                                                    fontSize: 20,
-                                                    color: "#005fa3"
+                                                    fontSize: {
+                                                        xs: 18,
+                                                        sm: 20
+                                                    },
+                                                    color: "#005fa3",
+                                                    flexShrink: 0
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ResultScreen.tsx",
-                                                lineNumber: 291,
+                                                lineNumber: 318,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -614,36 +813,40 @@ function ResultScreen({ isEligible, onRestart }) {
                                                 sx: {
                                                     flex: 1,
                                                     textAlign: "left",
-                                                    fontWeight: 500
+                                                    fontWeight: 500,
+                                                    fontSize: {
+                                                        xs: "0.8125rem",
+                                                        sm: "0.875rem"
+                                                    }
                                                 },
                                                 children: "E-devlet TOKİ İşlemleri"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ResultScreen.tsx",
-                                                lineNumber: 292,
+                                                lineNumber: 319,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ResultScreen.tsx",
-                                        lineNumber: 268,
+                                        lineNumber: 295,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ResultScreen.tsx",
-                                lineNumber: 188,
+                                lineNumber: 213,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ResultScreen.tsx",
-                        lineNumber: 171,
+                        lineNumber: 196,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/ResultScreen.tsx",
-                lineNumber: 82,
+                lineNumber: 83,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
@@ -952,31 +1155,76 @@ function QuizFlow() {
             width: "100%",
             maxWidth: 900,
             mx: "auto",
-            px: 2
+            px: {
+                xs: 1,
+                sm: 2
+            }
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Stepper$2f$Stepper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Stepper$3e$__["Stepper"], {
                 activeStep: currentStep,
                 sx: {
-                    mb: 4,
-                    mt: 2,
+                    mb: {
+                        xs: 2,
+                        sm: 3,
+                        md: 4
+                    },
+                    mt: {
+                        xs: 1,
+                        sm: 2
+                    },
                     "& .MuiStepLabel-root .Mui-completed": {
                         color: "#005fa3"
                     },
                     "& .MuiStepLabel-label.Mui-completed.MuiStepLabel-alternativeLabel": {
-                        color: "#005fa3"
+                        color: "#005fa3",
+                        fontSize: {
+                            xs: "0.625rem",
+                            sm: "0.75rem",
+                            md: "0.875rem"
+                        }
                     },
                     "& .MuiStepLabel-root .Mui-active": {
                         color: "#ff9800"
                     },
                     "& .MuiStepLabel-label.Mui-active.MuiStepLabel-alternativeLabel": {
                         color: "#ff9800",
-                        fontWeight: 600
+                        fontWeight: 600,
+                        fontSize: {
+                            xs: "0.625rem",
+                            sm: "0.75rem",
+                            md: "0.875rem"
+                        }
+                    },
+                    "& .MuiStepLabel-label": {
+                        fontSize: {
+                            xs: "0.625rem",
+                            sm: "0.75rem",
+                            md: "0.875rem"
+                        }
                     },
                     "& .MuiStep-root": {
+                        padding: {
+                            xs: "4px",
+                            sm: "8px"
+                        },
                         "& .MuiStepLabel-root": {
                             "& .MuiStepIcon-root": {
-                                fontSize: "1.8rem",
+                                fontSize: {
+                                    xs: "1.2rem",
+                                    sm: "1.5rem",
+                                    md: "1.8rem"
+                                },
+                                width: {
+                                    xs: 24,
+                                    sm: 32,
+                                    md: 36
+                                },
+                                height: {
+                                    xs: 24,
+                                    sm: 32,
+                                    md: 36
+                                },
                                 "&.Mui-completed": {
                                     color: "#005fa3"
                                 },
@@ -992,12 +1240,12 @@ function QuizFlow() {
                 }).map((_, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Step$2f$Step$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Step$3e$__["Step"], {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$StepLabel$2f$StepLabel$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__StepLabel$3e$__["StepLabel"], {}, void 0, false, {
                             fileName: "[project]/src/components/QuizFlow.tsx",
-                            lineNumber: 334,
+                            lineNumber: 342,
                             columnNumber: 13
                         }, this)
                     }, index, false, {
                         fileName: "[project]/src/components/QuizFlow.tsx",
-                        lineNumber: 333,
+                        lineNumber: 341,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
@@ -1016,22 +1264,41 @@ function QuizFlow() {
                     totalQuestions: totalSteps
                 }, currentStep, false, {
                     fileName: "[project]/src/components/QuizFlow.tsx",
-                    lineNumber: 340,
+                    lineNumber: 348,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/QuizFlow.tsx",
-                lineNumber: 339,
+                lineNumber: 347,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 sx: {
                     display: "flex",
                     justifyContent: "space-between",
-                    mt: 4,
-                    mb: 4,
-                    minHeight: 56,
-                    alignItems: "center"
+                    gap: {
+                        xs: 1,
+                        sm: 2
+                    },
+                    mt: {
+                        xs: 2,
+                        sm: 3,
+                        md: 4
+                    },
+                    mb: {
+                        xs: 2,
+                        sm: 3,
+                        md: 4
+                    },
+                    minHeight: {
+                        xs: 48,
+                        sm: 56
+                    },
+                    alignItems: "center",
+                    flexWrap: {
+                        xs: "wrap",
+                        sm: "nowrap"
+                    }
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
@@ -1039,7 +1306,18 @@ function QuizFlow() {
                         disabled: currentStep === 0,
                         sx: {
                             color: "#005fa3",
-                            minWidth: 120,
+                            minWidth: {
+                                xs: 100,
+                                sm: 120
+                            },
+                            fontSize: {
+                                xs: "0.875rem",
+                                sm: "1rem"
+                            },
+                            py: {
+                                xs: 1,
+                                sm: 1.5
+                            },
                             "&:disabled": {
                                 color: "#ccc"
                             }
@@ -1047,7 +1325,7 @@ function QuizFlow() {
                         children: "Önceki"
                     }, void 0, false, {
                         fileName: "[project]/src/components/QuizFlow.tsx",
-                        lineNumber: 361,
+                        lineNumber: 371,
                         columnNumber: 9
                     }, this),
                     selectedAnswer && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
@@ -1057,7 +1335,18 @@ function QuizFlow() {
                             background: "linear-gradient(135deg, #005fa3 0%, #ff9800 100%)",
                             boxShadow: "0 4px 15px rgba(0, 95, 163, 0.3)",
                             fontWeight: 600,
-                            minWidth: 120,
+                            minWidth: {
+                                xs: 100,
+                                sm: 120
+                            },
+                            fontSize: {
+                                xs: "0.875rem",
+                                sm: "1rem"
+                            },
+                            py: {
+                                xs: 1,
+                                sm: 1.5
+                            },
                             "&:hover": {
                                 background: "linear-gradient(135deg, #004a82 0%, #ff6f00 100%)",
                                 boxShadow: "0 6px 20px rgba(0, 95, 163, 0.4)"
@@ -1066,13 +1355,13 @@ function QuizFlow() {
                         children: currentStep === totalSteps - 1 ? "Sonuçları Gör 🏠" : "Sonraki"
                     }, void 0, false, {
                         fileName: "[project]/src/components/QuizFlow.tsx",
-                        lineNumber: 375,
+                        lineNumber: 387,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/QuizFlow.tsx",
-                lineNumber: 351,
+                lineNumber: 359,
                 columnNumber: 7
             }, this)
         ]
@@ -1112,7 +1401,15 @@ function Home() {
                 minHeight: '100vh',
                 background: 'linear-gradient(135deg, #e8f4f8 0%, #f0f8ff 50%, #fff5e6 100%)',
                 position: 'relative',
-                py: 4,
+                py: {
+                    xs: 2,
+                    sm: 3,
+                    md: 4
+                },
+                px: {
+                    xs: 1,
+                    sm: 2
+                },
                 '&::before': {
                     content: '""',
                     position: 'absolute',
@@ -1138,16 +1435,20 @@ function Home() {
                 maxWidth: "lg",
                 sx: {
                     position: 'relative',
-                    zIndex: 1
+                    zIndex: 1,
+                    px: {
+                        xs: 0,
+                        sm: 2
+                    }
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$QuizFlow$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 42,
+                    lineNumber: 43,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 41,
+                lineNumber: 42,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
@@ -1164,7 +1465,14 @@ function Home() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            px: 2,
+            px: {
+                xs: 1,
+                sm: 2
+            },
+            py: {
+                xs: 2,
+                sm: 0
+            },
             overflow: 'hidden',
             '&::before': {
                 content: '""',
@@ -1258,33 +1566,55 @@ function Home() {
                         children: "TOKİ Uygunluk Testi"
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 116,
+                        lineNumber: 118,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                         variant: "h6",
                         sx: {
-                            mb: 4,
+                            mb: {
+                                xs: 3,
+                                sm: 4
+                            },
                             color: '#666',
-                            lineHeight: 1.8
+                            lineHeight: 1.8,
+                            fontSize: {
+                                xs: '1rem',
+                                sm: '1.25rem'
+                            },
+                            px: {
+                                xs: 1,
+                                sm: 0
+                            }
                         },
                         children: "500 Bin Sosyal Konut Projesi için başvuru şartlarını sağlayıp sağlamadığınızı öğrenmek için teste başlayın."
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 131,
+                        lineNumber: 133,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$esm$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                         variant: "body2",
                         sx: {
-                            mb: 4,
+                            mb: {
+                                xs: 3,
+                                sm: 4
+                            },
                             color: '#999',
-                            fontStyle: 'italic'
+                            fontStyle: 'italic',
+                            fontSize: {
+                                xs: '0.8125rem',
+                                sm: '0.875rem'
+                            },
+                            px: {
+                                xs: 1,
+                                sm: 0
+                            }
                         },
                         children: "Bu test sadece bilgilendirme amaçlıdır. Resmî bir başvuru işlemi yapılmaz."
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 142,
+                        lineNumber: 146,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1299,9 +1629,18 @@ function Home() {
                             size: "large",
                             onClick: ()=>setQuizStarted(true),
                             sx: {
-                                py: 2,
-                                px: 6,
-                                fontSize: '1.1rem',
+                                py: {
+                                    xs: 1.5,
+                                    sm: 2
+                                },
+                                px: {
+                                    xs: 4,
+                                    sm: 6
+                                },
+                                fontSize: {
+                                    xs: '1rem',
+                                    sm: '1.1rem'
+                                },
                                 fontWeight: 600,
                                 background: 'linear-gradient(135deg, #005fa3 0%, #ff9800 100%)',
                                 boxShadow: '0 8px 25px rgba(0, 95, 163, 0.4), 0 0 0 0 rgba(255, 152, 0, 0.4)',
@@ -1330,28 +1669,28 @@ function Home() {
                             children: "Teste Başla 🏠"
                         }, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 157,
+                            lineNumber: 163,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 153,
+                        lineNumber: 159,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 93,
+                lineNumber: 95,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/page.tsx",
-            lineNumber: 87,
+            lineNumber: 89,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/page.tsx",
-        lineNumber: 49,
+        lineNumber: 50,
         columnNumber: 5
     }, this);
 }

@@ -295,17 +295,18 @@ export default function QuizFlow() {
   const selectedAnswer = answers[questionKey];
 
   return (
-    <Box sx={{ width: "100%", maxWidth: 900, mx: "auto", px: 2 }}>
+    <Box sx={{ width: "100%", maxWidth: 900, mx: "auto", px: { xs: 1, sm: 2 } }}>
       <Stepper
         activeStep={currentStep}
         sx={{
-          mb: 4,
-          mt: 2,
+          mb: { xs: 2, sm: 3, md: 4 },
+          mt: { xs: 1, sm: 2 },
           "& .MuiStepLabel-root .Mui-completed": {
             color: "#005fa3",
           },
           "& .MuiStepLabel-label.Mui-completed.MuiStepLabel-alternativeLabel": {
             color: "#005fa3",
+            fontSize: { xs: "0.625rem", sm: "0.75rem", md: "0.875rem" },
           },
           "& .MuiStepLabel-root .Mui-active": {
             color: "#ff9800",
@@ -313,11 +314,18 @@ export default function QuizFlow() {
           "& .MuiStepLabel-label.Mui-active.MuiStepLabel-alternativeLabel": {
             color: "#ff9800",
             fontWeight: 600,
+            fontSize: { xs: "0.625rem", sm: "0.75rem", md: "0.875rem" },
+          },
+          "& .MuiStepLabel-label": {
+            fontSize: { xs: "0.625rem", sm: "0.75rem", md: "0.875rem" },
           },
           "& .MuiStep-root": {
+            padding: { xs: "4px", sm: "8px" },
             "& .MuiStepLabel-root": {
               "& .MuiStepIcon-root": {
-                fontSize: "1.8rem",
+                fontSize: { xs: "1.2rem", sm: "1.5rem", md: "1.8rem" },
+                width: { xs: 24, sm: 32, md: 36 },
+                height: { xs: 24, sm: 32, md: 36 },
                 "&.Mui-completed": {
                   color: "#005fa3",
                 },
@@ -352,10 +360,12 @@ export default function QuizFlow() {
         sx={{
           display: "flex",
           justifyContent: "space-between",
-          mt: 4,
-          mb: 4,
-          minHeight: 56,
+          gap: { xs: 1, sm: 2 },
+          mt: { xs: 2, sm: 3, md: 4 },
+          mb: { xs: 2, sm: 3, md: 4 },
+          minHeight: { xs: 48, sm: 56 },
           alignItems: "center",
+          flexWrap: { xs: "wrap", sm: "nowrap" },
         }}
       >
         <Button
@@ -363,7 +373,9 @@ export default function QuizFlow() {
           disabled={currentStep === 0}
           sx={{
             color: "#005fa3",
-            minWidth: 120,
+            minWidth: { xs: 100, sm: 120 },
+            fontSize: { xs: "0.875rem", sm: "1rem" },
+            py: { xs: 1, sm: 1.5 },
             "&:disabled": {
               color: "#ccc",
             },
@@ -379,7 +391,9 @@ export default function QuizFlow() {
               background: "linear-gradient(135deg, #005fa3 0%, #ff9800 100%)",
               boxShadow: "0 4px 15px rgba(0, 95, 163, 0.3)",
               fontWeight: 600,
-              minWidth: 120,
+              minWidth: { xs: 100, sm: 120 },
+              fontSize: { xs: "0.875rem", sm: "1rem" },
+              py: { xs: 1, sm: 1.5 },
               "&:hover": {
                 background: "linear-gradient(135deg, #004a82 0%, #ff6f00 100%)",
                 boxShadow: "0 6px 20px rgba(0, 95, 163, 0.4)",

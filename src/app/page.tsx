@@ -15,7 +15,8 @@ export default function Home() {
           minHeight: '100vh',
           background: 'linear-gradient(135deg, #e8f4f8 0%, #f0f8ff 50%, #fff5e6 100%)',
           position: 'relative',
-          py: 4,
+          py: { xs: 2, sm: 3, md: 4 },
+          px: { xs: 1, sm: 2 },
           '&::before': {
             content: '""',
             position: 'absolute',
@@ -38,7 +39,7 @@ export default function Home() {
           },
         }}
       >
-        <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1 }}>
+        <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1, px: { xs: 0, sm: 2 } }}>
           <QuizFlow />
         </Container>
       </Box>
@@ -54,7 +55,8 @@ export default function Home() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        px: 2,
+        px: { xs: 1, sm: 2 },
+        py: { xs: 2, sm: 0 },
         overflow: 'hidden',
         '&::before': {
           content: '""',
@@ -131,9 +133,11 @@ export default function Home() {
           <Typography
             variant="h6"
             sx={{
-              mb: 4,
+              mb: { xs: 3, sm: 4 },
               color: '#666',
               lineHeight: 1.8,
+              fontSize: { xs: '1rem', sm: '1.25rem' },
+              px: { xs: 1, sm: 0 },
             }}
           >
             500 Bin Sosyal Konut Projesi için başvuru şartlarını sağlayıp
@@ -142,9 +146,11 @@ export default function Home() {
           <Typography
             variant="body2"
             sx={{
-              mb: 4,
+              mb: { xs: 3, sm: 4 },
               color: '#999',
               fontStyle: 'italic',
+              fontSize: { xs: '0.8125rem', sm: '0.875rem' },
+              px: { xs: 1, sm: 0 },
             }}
           >
             Bu test sadece bilgilendirme amaçlıdır. Resmî bir başvuru işlemi
@@ -159,9 +165,9 @@ export default function Home() {
               size="large"
               onClick={() => setQuizStarted(true)}
               sx={{
-                py: 2,
-                px: 6,
-                fontSize: '1.1rem',
+                py: { xs: 1.5, sm: 2 },
+                px: { xs: 4, sm: 6 },
+                fontSize: { xs: '1rem', sm: '1.1rem' },
                 fontWeight: 600,
                 background: 'linear-gradient(135deg, #005fa3 0%, #ff9800 100%)',
                 boxShadow: '0 8px 25px rgba(0, 95, 163, 0.4), 0 0 0 0 rgba(255, 152, 0, 0.4)',

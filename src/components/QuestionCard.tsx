@@ -30,13 +30,14 @@ export default function QuestionCard({
     >
       <Card
         sx={{
-          borderRadius: 3,
+          borderRadius: { xs: 2, sm: 3 },
           boxShadow:
             "0 10px 40px rgba(0, 95, 163, 0.15), 0 0 0 1px rgba(255, 152, 0, 0.1)",
           maxWidth: 800,
           width: "100%",
           mx: "auto",
-          minHeight: 500,
+          minHeight: { xs: "auto", sm: 500 },
+          maxHeight: { xs: "calc(100vh - 200px)", sm: "none" },
           display: "flex",
           flexDirection: "column",
           background: "linear-gradient(135deg, #ffffff 0%, #f8fbff 100%)",
@@ -69,11 +70,12 @@ export default function QuestionCard({
       >
         <CardContent
           sx={{
-            p: 4,
+            p: { xs: 2, sm: 3, md: 4 },
             display: "flex",
             flexDirection: "column",
             flex: 1,
             minHeight: 0,
+            overflow: "auto",
           }}
         >
           <Typography
@@ -89,15 +91,15 @@ export default function QuestionCard({
             Soru {questionNumber} / {totalQuestions}
           </Typography>
 
-          {/* Soru alanı - sabit yükseklik */}
+          {/* Soru alanı - responsive yükseklik */}
           <Box
             sx={{
-              minHeight: 60,
-              maxHeight: 120,
-              mb: 4,
+              minHeight: { xs: "auto", sm: 120 },
+              maxHeight: { xs: "none", sm: 120 },
+              mb: { xs: 2, sm: 3, md: 4 },
               display: "flex",
               alignItems: "flex-start",
-              overflow: "auto",
+              overflow: { xs: "visible", sm: "auto" },
               "&::-webkit-scrollbar": {
                 width: "6px",
               },
@@ -122,21 +124,24 @@ export default function QuestionCard({
                 color: "#333",
                 lineHeight: 1.5,
                 wordBreak: "break-word",
+                fontSize: { xs: "1.25rem", sm: "1.5rem", md: "1.75rem" },
               }}
             >
               {question}
             </Typography>
           </Box>
 
-          {/* Cevap alanı - sabit yükseklik */}
+          {/* Cevap alanı - responsive yükseklik */}
           <Box
             sx={{
               display: "flex",
               flexDirection: "column",
-              gap: 2,
+              gap: { xs: 1.5, sm: 2 },
               flex: 1,
               minHeight: 0,
-              pt: 2,
+              pt: { xs: 1, sm: 2 },
+              overflowY: { xs: "visible", sm: "auto" },
+              maxHeight: { xs: "none", sm: "calc(100vh - 400px)", md: "none" },
               "&::-webkit-scrollbar": {
                 width: "6px",
               },
@@ -160,12 +165,11 @@ export default function QuestionCard({
                 onClick={() => onAnswerSelect(option)}
                 fullWidth
                 sx={{
-                  minHeight: 56,
-                  maxHeight: 56,
-                  py: 1.5,
-                  px: 3,
+                  minHeight: { xs: "auto", sm: 56 },
+                  py: { xs: 1.25, sm: 1.5 },
+                  px: { xs: 2, sm: 3 },
                   textTransform: "none",
-                  fontSize: "1rem",
+                  fontSize: { xs: "0.875rem", sm: "0.9375rem", md: "1rem" },
                   borderRadius: 2,
                   background:
                     selectedAnswer === option

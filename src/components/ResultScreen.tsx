@@ -35,14 +35,15 @@ export default function ResultScreen({
     >
       <Card
         sx={{
-          borderRadius: 3,
+          borderRadius: { xs: 2, sm: 3 },
           boxShadow: isEligible
             ? "0 20px 60px rgba(76, 175, 80, 0.25), 0 0 0 1px rgba(76, 175, 80, 0.1)"
             : "0 20px 60px rgba(244, 67, 54, 0.15), 0 0 0 1px rgba(244, 67, 54, 0.1)",
           maxWidth: 800,
           width: "100%",
           mx: "auto",
-          minHeight: 400,
+          minHeight: { xs: "auto", sm: 400 },
+          maxHeight: { xs: "calc(100vh - 100px)", sm: "none" },
           display: "flex",
           flexDirection: "column",
           background: isEligible
@@ -81,7 +82,7 @@ export default function ResultScreen({
       >
         <CardContent
           sx={{
-            p: 6,
+            p: { xs: 3, sm: 4, md: 6 },
             textAlign: "center",
             display: "flex",
             flexDirection: "column",
@@ -89,6 +90,7 @@ export default function ResultScreen({
             justifyContent: "center",
             flex: 1,
             minHeight: 0,
+            overflow: "auto",
           }}
         >
           <Box
@@ -96,29 +98,41 @@ export default function ResultScreen({
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              minHeight: 200,
+              minHeight: { xs: "auto", sm: 200 },
               justifyContent: "center",
+              mb: { xs: 2, sm: 0 },
             }}
           >
             {isEligible ? (
               <>
                 <CheckCircle
                   sx={{
-                    fontSize: 80,
+                    fontSize: { xs: 60, sm: 70, md: 80 },
                     color: "#4caf50",
-                    mb: 3,
+                    mb: { xs: 2, sm: 3 },
                   }}
                 />
                 <Typography
                   variant="h4"
                   component="h2"
-                  sx={{ mb: 2, fontWeight: 600, color: "#333" }}
+                  sx={{
+                    mb: { xs: 1, sm: 2 },
+                    fontWeight: 600,
+                    color: "#333",
+                    fontSize: { xs: "1.5rem", sm: "2rem", md: "2.125rem" },
+                  }}
                 >
                   Tebrikler!
                 </Typography>
                 <Typography
                   variant="h6"
-                  sx={{ mb: 4, color: "#666", lineHeight: 1.6 }}
+                  sx={{
+                    mb: { xs: 2, sm: 3, md: 4 },
+                    color: "#666",
+                    lineHeight: 1.6,
+                    fontSize: { xs: "1rem", sm: "1.25rem" },
+                    px: { xs: 2, sm: 0 },
+                  }}
                 >
                   TOKİ başvuru şartlarını sağlıyorsunuz.
                 </Typography>
@@ -127,21 +141,32 @@ export default function ResultScreen({
               <>
                 <Cancel
                   sx={{
-                    fontSize: 80,
+                    fontSize: { xs: 60, sm: 70, md: 80 },
                     color: "#f44336",
-                    mb: 3,
+                    mb: { xs: 2, sm: 3 },
                   }}
                 />
                 <Typography
                   variant="h4"
                   component="h2"
-                  sx={{ mb: 2, fontWeight: 600, color: "#333" }}
+                  sx={{
+                    mb: { xs: 1, sm: 2 },
+                    fontWeight: 600,
+                    color: "#333",
+                    fontSize: { xs: "1.5rem", sm: "2rem", md: "2.125rem" },
+                  }}
                 >
                   Maalesef
                 </Typography>
                 <Typography
                   variant="h6"
-                  sx={{ mb: 4, color: "#666", lineHeight: 1.6 }}
+                  sx={{
+                    mb: { xs: 2, sm: 3, md: 4 },
+                    color: "#666",
+                    lineHeight: 1.6,
+                    fontSize: { xs: "1rem", sm: "1.25rem" },
+                    px: { xs: 2, sm: 0 },
+                  }}
                 >
                   Bu başvuru döneminde TOKİ'ye başvuru yapamıyorsunuz.
                 </Typography>
@@ -153,10 +178,10 @@ export default function ResultScreen({
             variant="contained"
             onClick={onRestart}
             sx={{
-              m1: 2,
-              py: 1.5,
-              px: 2,
-              fontSize: "1rem",
+              m: { xs: 1, sm: 2 },
+              py: { xs: 1.25, sm: 1.5 },
+              px: { xs: 2, sm: 3 },
+              fontSize: { xs: "0.875rem", sm: "1rem" },
               backgroundColor: "#005fa3",
               "&:hover": {
                 backgroundColor: "#004a82",
@@ -166,7 +191,7 @@ export default function ResultScreen({
             Yeniden Dene
           </Button>
 
-          <Divider sx={{ my: 4, width: "100%", maxWidth: 500 }} />
+          <Divider sx={{ my: { xs: 2, sm: 3, md: 4 }, width: "100%", maxWidth: 500 }} />
 
           <Box
             sx={{
@@ -177,10 +202,10 @@ export default function ResultScreen({
             <Typography
               variant="subtitle2"
               sx={{
-                mb: 3,
+                mb: { xs: 2, sm: 3 },
                 color: "#55883B",
                 fontWeight: 600,
-                fontSize: "0.95rem",
+                fontSize: { xs: "0.875rem", sm: "0.95rem" },
               }}
             >
               Yararlı Bağlantılar
@@ -189,7 +214,7 @@ export default function ResultScreen({
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                gap: 2,
+                gap: { xs: 1.5, sm: 2 },
                 mb: 1,
               }}
             >
@@ -200,10 +225,10 @@ export default function ResultScreen({
                 sx={{
                   display: "flex",
                   alignItems: "center",
-                  gap: 1.5,
+                  gap: { xs: 1, sm: 1.5 },
                   color: "#005fa3",
                   textDecoration: "none",
-                  p: 1.5,
+                  p: { xs: 1.25, sm: 1.5 },
                   borderRadius: 2,
                   border: "1px solid rgba(0, 95, 163, 0.2)",
                   backgroundColor: "rgba(0, 95, 163, 0.05)",
@@ -216,13 +241,14 @@ export default function ResultScreen({
                   },
                 }}
               >
-                <Description sx={{ fontSize: 20, color: "#005fa3" }} />
+                <Description sx={{ fontSize: { xs: 18, sm: 20 }, color: "#005fa3", flexShrink: 0 }} />
                 <Typography
                   variant="body2"
                   sx={{
                     flex: 1,
                     textAlign: "left",
                     fontWeight: 500,
+                    fontSize: { xs: "0.8125rem", sm: "0.875rem" },
                   }}
                 >
                   Detaylı Başvuru Bilgilendirme Formu
@@ -236,10 +262,10 @@ export default function ResultScreen({
                 sx={{
                   display: "flex",
                   alignItems: "center",
-                  gap: 1.5,
+                  gap: { xs: 1, sm: 1.5 },
                   color: "#005fa3",
                   textDecoration: "none",
-                  p: 1.5,
+                  p: { xs: 1.25, sm: 1.5 },
                   borderRadius: 2,
                   border: "1px solid rgba(0, 95, 163, 0.2)",
                   backgroundColor: "rgba(0, 95, 163, 0.05)",
@@ -252,13 +278,14 @@ export default function ResultScreen({
                   },
                 }}
               >
-                <Language sx={{ fontSize: 20, color: "#005fa3" }} />
+                <Language sx={{ fontSize: { xs: 18, sm: 20 }, color: "#005fa3", flexShrink: 0 }} />
                 <Typography
                   variant="body2"
                   sx={{
                     flex: 1,
                     textAlign: "left",
                     fontWeight: 500,
+                    fontSize: { xs: "0.8125rem", sm: "0.875rem" },
                   }}
                 >
                   TOKİ 500 Bin Konut Projesi Resmi Site
@@ -272,10 +299,10 @@ export default function ResultScreen({
                 sx={{
                   display: "flex",
                   alignItems: "center",
-                  gap: 1.5,
+                  gap: { xs: 1, sm: 1.5 },
                   color: "#005fa3",
                   textDecoration: "none",
-                  p: 1.5,
+                  p: { xs: 1.25, sm: 1.5 },
                   borderRadius: 2,
                   border: "1px solid rgba(0, 95, 163, 0.2)",
                   backgroundColor: "rgba(0, 95, 163, 0.05)",
@@ -288,13 +315,14 @@ export default function ResultScreen({
                   },
                 }}
               >
-                <VerifiedUser sx={{ fontSize: 20, color: "#005fa3" }} />
+                <VerifiedUser sx={{ fontSize: { xs: 18, sm: 20 }, color: "#005fa3", flexShrink: 0 }} />
                 <Typography
                   variant="body2"
                   sx={{
                     flex: 1,
                     textAlign: "left",
                     fontWeight: 500,
+                    fontSize: { xs: "0.8125rem", sm: "0.875rem" },
                   }}
                 >
                   E-devlet TOKİ İşlemleri
