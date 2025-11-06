@@ -37,6 +37,8 @@ Kullanılacak teknolojiler:
 - Yazı tipi: Inter veya Roboto
 - İlerleme: Material UI Stepper veya basit “Sonraki / Önceki” butonları
 
+---
+
 Sonuç ekranı:
 
 ✅ Uygun → “Tebrikler, TOKİ başvuru şartlarını sağlıyorsunuz!”
@@ -45,6 +47,30 @@ Sonuç ekranı:
 “Yeniden Dene” butonu ile başa dön.
 
 ---
+
+📁 COMPONENT YAPISI
+
+- pages/index.tsx → Giriş ekranı (“Teste Başla” butonu)
+- components/QuestionCard.tsx → Her soruyu gösterir
+- components/QuizFlow.tsx → Soru sıralamasını yönetir
+- components/ResultScreen.tsx → Sonuç ekranı
+
+---
+
+🧩 EKSTRA ÖNERİLER
+
+- Tüm metinler Türkçe olacak.
+- Cevaplar LocalStorage’da saklanabilir (isteğe bağlı).
+- Basit geçiş animasyonları (Framer Motion) kullanılabilir.
+
+SEO için başlık: “TOKİ Uygunluk Testi – Başvuru Şartlarını Öğrenin”
+
+✨ Sonuçta ortaya çıkan web sitesi:
+
+- Kullanımı kolay
+- Türkçe, sade ve bilgilendirici
+
+  \*\*\* Vatandaşların TOKİ başvuru koşullarına uygunluğunu hızlıca öğrenebileceği bir test aracı olacak.
 
 🎯 PROJENİN AMACI
 
