@@ -15,6 +15,9 @@ import {
   Description,
   Language,
   VerifiedUser,
+  LinkedIn,
+  GitHub,
+  Email,
 } from "@mui/icons-material";
 import { motion } from "framer-motion";
 
@@ -360,11 +363,74 @@ export default function ResultScreen({
                 alignItems: "center",
                 justifyContent: "center",
                 gap: 0.5,
+                mb: { xs: 1.5, sm: 2 },
               }}
             >
               <span>🚀</span>
               <span>Cursor AI ile geliştirilmiştir</span>
             </Typography>
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: { xs: 1.5, sm: 2 },
+                mt: { xs: 1, sm: 1.5 },
+              }}
+            >
+              <Link
+                href="https://www.linkedin.com/in/bilaltosundev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  color: "#0077b5",
+                  transition: "all 0.3s ease",
+                  "&:hover": {
+                    color: "#005fa3",
+                    transform: "translateY(-2px)",
+                  },
+                }}
+              >
+                <LinkedIn sx={{ fontSize: { xs: 20, sm: 24 } }} />
+              </Link>
+              <Link
+                href="https://github.com/bilaltosungit"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  color: "#333",
+                  transition: "all 0.3s ease",
+                  "&:hover": {
+                    color: "#005fa3",
+                    transform: "translateY(-2px)",
+                  },
+                }}
+              >
+                <GitHub sx={{ fontSize: { xs: 20, sm: 24 } }} />
+              </Link>
+              <Link
+                href="mailto:bilaltosun7@gmail.com"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  color: "#ea4335",
+                  transition: "all 0.3s ease",
+                  "&:hover": {
+                    color: "#005fa3",
+                    transform: "translateY(-2px)",
+                  },
+                }}
+              >
+                <Email sx={{ fontSize: { xs: 20, sm: 24 } }} />
+              </Link>
+            </Box>
           </Box>
         </CardContent>
       </Card>
